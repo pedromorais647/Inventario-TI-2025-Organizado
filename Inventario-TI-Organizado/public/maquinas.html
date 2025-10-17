@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Máquinas e Impressoras - TI (by Petrus)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>💻 Controle de Máquinas e Impressoras - TI (by Petrus)</h1>
+
+  <p>
+    <a href="index.html">📦 Ir para Estoque</a>
+    <a href="maquinas.html"><b>💻 Página de Máquinas</b></a>
+  </p>
+
+  <h2>Adicionar Máquina / Impressora</h2>
+  <input id="nome" placeholder="Nome (ex: PC 01)">
+  <input id="tipo" placeholder="Tipo (PC, Notebook, Impressora)">
+  <input id="setor" placeholder="Setor (ex: RH, TI)">
+  <input id="status" placeholder="Status (Ativo, Em manutenção)">
+  <input id="anydesk" placeholder="Anydesk (ex: 123 456 789)">
+  <input id="ultimaManutencao" type="date" placeholder="Última manutenção">
+  <button class="btn-add" onclick="adicionarMaquina()">Adicionar</button>
+
+  <h2>Lista de Equipamentos</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Tipo</th>
+        <th>Setor</th>
+        <th>Status</th>
+        <th>Anydesk</th>
+        <th>Última Manutenção</th>
+        <th>Última Atualização</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabela"></tbody>
+  </table>
+
+  <script type="module" src="maquinas.js"></script>
+</body>
+</html>
