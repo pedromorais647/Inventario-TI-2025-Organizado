@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Controle de Estoque - TI (by Petrus)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📦 Controle de Estoque - TI (by Petrus)</h1>
+
+  <p>
+    <a href="index.html"><b>📦 Página de Estoque</b></a>
+    <a href="maquinas.html">💻 Ir para Máquinas e Impressoras</a>
+  </p>
+
+  <h2>Adicionar Item</h2>
+  <input id="nome" placeholder="Nome do item">
+  <input id="descricao" placeholder="Descrição">
+  <input id="quantidade" type="number" placeholder="Quantidade inicial">
+  <button class="btn-add" onclick="adicionarItem()">Adicionar</button>
+
+  <h2>Lista de Itens</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Quantidade</th>
+        <th>Última Atualização</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="tabela"></tbody>
+  </table>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
